@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <script src="https://unpkg.com/@openchemistry/molecule@0.4.33/dist/molecule.js"></script>
+    <style>
+      .root-container {
+        width: 100%;
+        display: flex;
+      }
+      .split-container {
+        width: 100%;
+        text-align: center;
+      }
+      .molecule-container {
+        width: 100%;
+        height: 40rem;
+      }
+    </style>
+    <title>Open Chemistry Static Benzene Example</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to use oc-molecule.
+    </noscript>
+    <div class="molecule-container">
+      <oc-molecule id="molecule-2"
+        molecule-renderer="vtkjs"
+        show-iso-surface="false"
+        show-volume="true"
+        src="data/benzene.cjson"
+        zoom="0.6"
+      />
+    </div>
+  </body>
+</html>
